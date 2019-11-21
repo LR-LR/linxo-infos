@@ -82,15 +82,21 @@ Dans le cadre de la directive DSP2, une authentification forte du client (SCA) e
 
 - **Redirect** : l’approche « redirigée » consiste à procéder à l’étape d’authentification sur la plateforme de l’ASPSP, le client « quitte » donc la plateforme du TPP pour s’authentifier sur celle de l’ASPSP puis sera redirigé vers l’interface du TPP une fois l’authentification terminée
 
-  ![Redirect](Redirect.jpg)
+<p align="center">
+  <image src="Redirect.jpg">
+</p>
 
 - **Decoupled** : ici l’authentification s’effectue directement au travers de l’ASPSP sans redirection. En effet, le client va donner ses identifiants d’authentification au TPP qui va par la suite le transmettre à l’ASPSP. L’ASPSP grâce à ces identifiants effectuera le processus d’authentification, sans que le client n’ai quitté pendant tout ce temps la plateforme du TPP.
 
-  ![Decoupled](Decoupled.jpg)
+<p align="center">
+  <image src="Decoupled.jpg">
+</p>
 
 - **Embedded** : À travers de cette approche, le client donne non pas ses identifiants, mais les clés de son authentification comme quelque chose qu’il connait ou qu’il possède au TPP (un code éphémère envoyé par le ASPSP sur le téléphone, un code PIN uniquement en possession du client). Le TPP va par la suite transmettre ces réponses à l’ASPSP pour valider l’authentification.
 
-  ![Embedded](Embedded.jpg)
+<p align="center">
+  <image src="Embedded.jpg">
+</p>
 
 ## 3. Plus d'informations
 
