@@ -12,8 +12,7 @@
   En effet, cela fait que je peux apporter un regard plus jeune au projet, que je suis adaptable, flexible et que j'ai envie d'apprendre.
 
 - Quels seraient vos axes d'amélioration ?
-  Aux premiers abords, je suis quelqu'un qui n'a pas l'air trés communiquant
-  <!-- TODO: À Compléter -->
+  Aux premiers abords, je suis quelqu'un qui n'a pas l'air trés communiquant, non-chalant, alors qu'en réalité je suis quelqu'un de dynamique
 
 ## Questions que je devrais poser
 
