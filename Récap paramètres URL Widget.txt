@@ -1,0 +1,36 @@
+Exemple pour OrangeBank - BerlinGroup : 
+
+URL de Widget (de connexion) :
+
+https://sandbox-api-tpp.orangebank.fr/public/berlingroup/authorize/AUTHORIZATION_ID_FINALISED?scope=AIS:VALID_CONSENT_ID&client_id=VALID_CLIENT_ID&state=test&redirect_uri=http://localhost&code_challenge=E9Melhoa2OwvFrEMTJguCHaoeK1t8URWbuGJSstw-cM&response_type=code&code_challenge_method=S256
+________________________________________________________
+
+
+
+
+//FIXE
+&state=test // Simple chaine de caractère, la valeur renseigné en entrée doit être restitué en sortie. 
+&response_type=code // Valeur fixe.
+
+//CHANGEANT
+AUTHORIZATION_ID_FINALISED // Provient de la réponse à la requête POST /berlingroup/v1/consents/{consentId}/authorisations (voir étape 1 - Initiate a consent (Sigle SCA) de la doc 09 - Use our Sandbox Dataset : https://devportal-tpp.orangebank.fr/howto)
+
+* ?scope=AIS:VALID_CONSENT_ID // CONSENT_ID à récupérer depuis la réponse de la requête POST /berlingroup/v1/consents (voir étape 1 - Initiate a consent (Sigle SCA) de la doc 09 - Use our Sandbox Dataset : https://devportal-tpp.orangebank.fr/howto)
+
+* &client_id=VALID_CLIENT_ID // CLIENT_ID à récupérer dans le chaine du certificat eIDAS qui a servi à la requête du EndPoint POST /consents (généralement, regarder dans le fichier gsheet d'enrollement pour obtenir la chaine de [l'organizationIdentifier provider in eIDAS certificate]  (même si y'a pas d'enrollement pour OrangeBank..., c'est dans ce doc où se trouve les infos)
+
+* &redirect_uri=http://localhost // L'URL de redirection en fonction de si le certificat (ici, le CLIENT_ID) renseigné provient Oxlin ou Linxo. A voir dans le fichier gsheet d'enrollement. 
+
+//SPECIFIQUES
+
+-------
+|PKCE|
+
+Lié au spécificité d'extension du serveur d'autorisation (afin de prévenir certaines attaques et pouvoir échanger de façon sécurisé entre les serveurs Oauth et les clients publiques - Utilisé par les mobiles et les applications JavaScript, mais peut techniquement être appliqué à n'importe quel client) https://oauth.net/2/pkce/
+https://www.oauth.com/oauth2-servers/pkce/
+
+
+* &code_challenge=E9Melhoa2OwvFrEMTJguCHaoeK1t8URWbuGJSstw-cM // Voir https://auth0.com/docs/api-auth/tutorials/authorization-code-grant-pkce pour la mise en place du Code Grant FLow + https://tonyxu-io.github.io/pkce-generator/ (Générateur de code challenge + verifier - Attention de bien cliquer sur le bouton bleu PUIS le lien 1 seule fois chacun, sinon les 2 codes ne seront plus correspondant). 
+
+* &code_challenge_method=S256 // Toujours la même méthode, je n'ai jamais vu d'autres valeurs pour ce paramètres. 
+-------

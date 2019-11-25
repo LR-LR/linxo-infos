@@ -21,6 +21,5 @@
 ## Ce que je doit mettre en avant sur moi
 
 - Mes connaissances des API et des tests de celles-ci à l'aide de Postman et Newman.
-- Le fais que j'ai eu pendant ma formation un atelier Scrum animé par Ugo Coppola :
-  <!-- TODO: Description de l'atelier -->
--
+- Le fait que j'ai eu pendant ma formation un atelier Scrum animé par Ugo Coppola
+- 
