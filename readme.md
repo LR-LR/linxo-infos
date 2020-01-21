@@ -30,7 +30,7 @@ Avec la DSP2, la Commission Européenne a de multiples objectifs : faire évolue
   - PISP (Payment Initiation Service Providers) :
     Ils permettent d’initier un paiement directement depuis leur plateforme.
 
-  - PIISP (Payment Istrument Issuer Service Provider):
+  - PIISP (Payment Istrument Issuer Service Provider) ou CBPII (Card Based Payment Instrument Issuer) :
     Fournissent des cartes de paiement qui sont reliées au compte bancaire.
 
 - PSU (Payment Services User) :
