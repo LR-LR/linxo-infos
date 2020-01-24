@@ -83,7 +83,7 @@
 | X-Request-ID | Header | ID de la requête |
 | Body         | Body   | ID de la requête |
 **Exemple de body :**
-```json
+```js
 {
   "access": { // Accès demandés pour un consentement
     "accounts": [ // Demande des informations des comptes détaillés
