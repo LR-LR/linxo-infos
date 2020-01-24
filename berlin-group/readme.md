@@ -187,7 +187,7 @@
 | PSU-IP-Address  | Header | L'adresse IP du client (PSU)                                                                                                 |
 | Body            | Body   | Body de la requête                                                                                                           |
 **Exemple de body :**
-```json
+```js
 // Pour les paiements simple ou récurrents (payments, periodic-payments)
 {
   "endToEndIdentification" : "MyEndToEndId",
@@ -297,7 +297,7 @@
 | X-Request-ID    | Header | ID de la requête                                                                                                                     |
 | Body            | Body   | Body de la requête                                                                                                                   |
 **Exemple de body :**
-```json
+```js
 {
   "scaAuthenticationData" : "", // Données d'authentification forte (SCA), dépend de la méthode d'authentification. Si la donnée est binaire, alors elle sera encodé en base64
 }
@@ -347,7 +347,7 @@
 | paymentId       | Path   | ID du paiement                                                                                                                       |
 | X-Request-ID    | Header | ID de la requête                                                                                                                     |
 **Exemple de body :**
-```json
+```js
 {
   "scaAuthenticationData" : "", // Données d'authentification forte (SCA), dépend de la méthode d'authentification. Si la donnée est binaire, alors elle sera encodé en base64
 }

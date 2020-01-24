@@ -57,7 +57,7 @@
 | X-Request-ID | Header | À définir dans la requête et à récupérer dans la réponse correspondante |
 | Body         | Body   | Liste des consentements accordés à l'AISP par le PSU                    |
 **Exemple de Body :**
-```json
+```js
 {
   "balances": [ // Liste des comptes dont on change le(s) consentement(s)
     {
@@ -99,7 +99,7 @@
 | X-Request-ID | Header | À définir dans la requête et à récupérer dans la réponse correspondante |
 | Body         | Body   | Informations de la requête de paiement                                  |
 **Exemple de Body :**
-```json
+```js
 {
   "paymentInformationId": "MyPmtInfId", // [Obligatoire] ID paiement
   "creationDateTime": "2020-01-23T10:56:10+01:00", // [Obligatoire] Date de création du paiement
@@ -204,7 +204,7 @@ Les valeurs à changer sont :
 | X-Request-ID             | Header | À définir dans la requête et à récupérer dans la réponse correspondante |
 | Body                     | Body   | Informations de la requête de paiement                                  |
 **Exemple de body :**
-```json
+```js
 { // [Obligatoire, même si vide]
   "psuAuthenticationFactor": "JJKJKJ788GKJKJBK"
 }
@@ -221,7 +221,7 @@ Les valeurs à changer sont :
 | X-Request-ID             | Header | À définir dans la requête et à récupérer dans la réponse correspondante |
 | Body                     | Body   | Informations de la requête de paiement                                  |
 **Exemple de body :**
-```json
+```js
 { // [Obligatoire, même si vide]
   "psuAuthenticationFactor": "JJKJKJ788GKJKJBK"
 }
