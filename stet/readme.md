@@ -21,11 +21,11 @@
 ### **1. GET /accounts**
 *Récupération des comptes du client (PSU)*
 **Paramètres requis :**
-| Nom          | Type   | Description                                                             |
-| ------------ | ------ | ----------------------------------------------------------------------- |
-| Authorizaton | Header | L'access token                                                          |
-| Signature    | Header | Signature de la requête (gérée par le proxy)                            |
-| X-Request-ID | Header | À définir dans la requête et à récupérer dans la réponse correspondante |
+ | Nom          | Type   | Description                                                             |
+ | ------------ | ------ | ----------------------------------------------------------------------- |
+ | Authorizaton | Header | L'access token                                                          |
+ | Signature    | Header | Signature de la requête (gérée par le proxy)                            |
+ | X-Request-ID | Header | À définir dans la requête et à récupérer dans la réponse correspondante |
 
 ### **2. GET /accounts/{accountResourceId}/balances**
 *Récupération d'un rapport sur le solde d'un compte*
